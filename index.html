@@ -879,7 +879,7 @@ function waText(){
   e.tip.l.forEach(function(x){L.push("✅ "+x)});
   L.push("*"+e.tip.c+"*","","━━━━━━━━━━━━━━━━━━","","⚽ *GIRO DO FUTEBOL*","");
   e.football.forEach(function(c){L.push("*"+c.nome.toUpperCase()+"* — "+c.casa+" "+c.gc+" x "+c.gf+" "+c.fora,c.res);c.next.forEach(function(n){L.push("📅 "+n[0].replace("<br>"," ")+" — "+n[1]+" ("+n[2]+")")});L.push("")});
-  L.push("━━━━━━━━━━━━━━━━━━","","🙏 *FRASE DO DIA*","“"+e.quote.t+"”","📖 *"+e.quote.r+"*","",e.quote.p,"","Marlon Salarolli 🖊️","Gerente – Sicoob Credirochas Centro","O seu Gerente sempre presente.");
+  L.push("━━━━━━━━━━━━━━━━━━","","🙏 *FRASE DO DIA*","“"+e.quote.t+"”","📖 *"+e.quote.r+"*","",e.quote.p,"","Marlon Salarolli 🖊️","Gerente – Sicoob Credirochas Centro","O seu Gerente sempre presente.","","Conteúdo extraído de https://boletimdiario.com - Acesse.");
   return L.join("\n");
 }
 function toast(msg){var t=$("toast");t.textContent=msg;t.hidden=false;setTimeout(function(){t.hidden=true},2200)}
