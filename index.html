@@ -433,13 +433,43 @@ body:not(.view-sim) #simulador,body:not(.view-sim) #goBol{display:none!important
 body.view-sim #hero,body.view-sim #camp,body.view-sim section:not(#simulador),body.view-sim .fab,body.view-sim .search,body.view-sim .chips a[data-v],body.view-sim #goSim{display:none!important}
 body.view-sim #simulador{padding-top:32px;min-height:70vh}
 @media (max-width:760px){.chips a.tab{margin-left:8px;position:sticky;right:0;background:var(--bg);box-shadow:-10px 0 8px -4px var(--bg)}.chips a{padding:10px 9px}}
+
+/* ===== v4: celular mais arejado ===== */
+.hero .eyebrow{margin-bottom:12px}
+.hero h1{padding-top:2px}
+@media (max-width:760px){
+ .nav .wrap{padding-block:6px 0}
+ .brand{font-size:18px}
+ .nav .iconbtn{padding:5px 11px;font-size:13px}
+ .chips{align-items:center;padding-bottom:2px}
+ .chips a{padding:8px 9px;font-size:14px}
+ .chips a.tab{padding:6px 12px;margin:3px 0 3px 8px;font-size:14px}
+ section{scroll-margin-top:84px}
+ .hero .wrap{padding-block:34px 64px}
+ .hero h1{line-height:1}
+ .hero .date{margin-top:16px}
+ .portrait button{aspect-ratio:3/2}
+ .portrait img{object-position:50% 45%}
+ .pills{margin-top:22px}
+}
+
+@media (max-width:760px){
+ .chips{display:contents}
+ .brand{order:0;flex:1 1 auto;font-size:17px}
+ .chips a.tab{order:1;position:static;box-shadow:none;background:transparent;margin:0}
+ .nav .iconbtn{order:2}
+ .chips a[data-v]{order:3;padding:8px 5px;font-size:13px}
+ .nav .wrap{column-gap:8px;row-gap:0}
+ .chips a[data-v]:first-of-type{margin-left:-5px}
+}
+@media (max-width:520px){#theme{display:none}}
 </style>
 
 <header class="nav">
   <div class="wrap">
     <div class="brand">Boletim diário <b>com Marlinho</b></div>
     <nav class="chips" aria-label="Seções">
-      <a href="#tempo" data-v="b">Tempo</a><a href="#noticias" data-v="b">Notícias</a><a href="#rochas" data-v="b">Rochas</a><a href="#mercado" data-v="b">Mercado</a><a href="#futebol" data-v="b">Futebol</a><a href="#simulador" id="goSim" class="tab">Simulador</a><a href="#boletim" id="goBol" class="tab">← Voltar ao boletim</a>
+      <a href="#tempo" data-v="b">Tempo</a><a href="#noticias" data-v="b">Notícias</a><a href="#rochas" data-v="b">Rochas</a><a href="#mercado" data-v="b">Mercado</a><a href="#futebol" data-v="b">Futebol</a><a href="#simulador" id="goSim" class="tab">Simulador</a><a href="#boletim" id="goBol" class="tab">← Boletim</a>
     </nav>
     <label class="search"><input id="q" type="search" placeholder="Buscar: MEI, Selic, rochas…" aria-label="Buscar na edição"></label>
     <button class="iconbtn" id="theme" type="button" aria-label="Alternar tema claro e escuro">Tema</button>
